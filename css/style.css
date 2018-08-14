@@ -258,3 +258,143 @@ footer a[class*="icon"]{
     background-repeat: no-repeat;
 }
 
+.breadcrumbs {
+    font-size: 12px;
+    line-height: 22px;
+    color: #c6c6c6;
+}
+
+.breadcrumbs a {
+    font-size: 12px;
+    line-height: 22px;
+    color: #c6c6c6;
+}
+
+.clientWrap .left p {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.clientWrap .left label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+}
+
+.printLogo span {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.printLogo .time {
+    font-size: 11px;
+    line-height: 22px;
+    color: #999999;
+}
+
+.addLogo label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #229647;
+    text-decoration: underline;
+}
+
+.addLogo span {
+    font-size: 11px;
+    line-height: 22px;
+    color: #999999;
+}
+
+.clientWrap button {
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #ff7200;
+    border: none;
+}
+
+.clientWrap .right button{
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #229647;
+    border: none;
+}
+
+.content h2 {
+    font-size: 25px;
+    line-height: 22px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.content h3 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.date {
+    font-size: 12px;
+    line-height: 22px;
+    color:#aaaaaa
+}
+
+.newsImg {
+    width: 980px;
+    height: 210px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.textNews p {
+    font-size: 13px;
+    line-height: 19px;
+    color:#333333;
+}
+
+.city {
+    font-size: 13px;
+    line-height: 22px;
+    color:#666666;
+}
+
+.content fieldset span {
+    font-size: 15px;
+    line-height: 22px;
+    color:#333333;
+}
+
+.content fieldset label {
+    font-size: 13px;
+    line-height: 19px;
+    color:#333333;
+}
+
+.content fieldset p {
+    font-size: 12px;
+    line-height: 18px;
+    color:#666666;
+}
+
+.content fieldset span {
+    font-size: 12px;
+    line-height: 18px;
+    color:#ff7200;
+}
+
+.deliveryAdress {
+    font-size: 13px;
+    line-height: 22px;
+    color:#666666;
+}
+
+.yourData {
+    font-size: 13px;
+    line-height: 19px;
+    color:#333333;
+}

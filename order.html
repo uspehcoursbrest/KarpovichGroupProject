@@ -13,11 +13,7 @@
 <header>
     <div class="container">
         <div class="left">
-<<<<<<< HEAD
             <a href="#" class="login"><span class="icon-user"></span>
-=======
-            <a href="#"><span class="icon-user"></span>
->>>>>>> b1efdff2a3461838da3cf56423ecf028b5163ee7
                 Войти в личный кабинет</a>
             <ul class="menu">
                 <li><a href="#">Оптовикам</a></li>
@@ -29,27 +25,17 @@
         </div>
         <div class="logo">
             <a href="#">
-                <img src="" alt="logo">
+                <img src="img/png/logo.png" alt="logo">
             </a>
         </div>
         <div class="right">
-<<<<<<< HEAD
             <a href="tel:84956488456" class="phone">
                 <span class="icon-phone"></span>
                 8 (495) 648-8-456
             </a>
             <a href="#" class="callBack">Не дозвонились?</a>
             <p class="timing"> Мы работаем пн-пт 10:00 - 19:00</p>
-            <a href="#" class="basket">товаров <span>5</span> на сумму<span></span> 2550&#8381;</a>
-=======
-            <a href="tel:84956488456">
-                <span class="icon-phone"></span>
-                8 (495) 648-8-456
-            </a>
-            <a href="#">Не дозвонились?</a>
-            <p> Мы работаем пн-пт 10:00 - 19:00</p>
-            <a href="#">товаров <span>5</span> на сумму<span></span> 2550&#8381;</a>
->>>>>>> b1efdff2a3461838da3cf56423ecf028b5163ee7
+            <a href="#" class="basket" style="background-image: url(img/png/basket.png)">товаров <span>5</span> на сумму<span>2550&#8381;</span></a>
         </div>
     </div>
 </header>
@@ -60,14 +46,15 @@
             <li><a href="#">Корзина</a></li>
             <li><span>Оформление заказа</span></li>
         </ul>
-        <h2>Оформление заказа</h2>Выбор города
+        <h2>Оформление заказа</h2>
         <form action="#">
             <fieldset>
-                <div><label for="city">Выберите город</label>
+                <div class="city">
+                    <label for="city">Выберите город</label>
                     <select name="city" id="city">
-                    <option value="">Брест</option>
+                        <option value="">Брест</option>
                         <option value="">не Брест</option>
-                </select>
+                    </select>
                 </div>
             </fieldset>
             <fieldset>
@@ -80,16 +67,16 @@
                             <br>- после 16:00 будет доставлен через один рабочий день;</p>
                     </li>
                     <li><input type="radio" name="delivery" id="2">
-                        <label for="2">Экспресс-доставка   450 р.</label>
+                        <label for="2">Экспресс-доставка 450 р.</label>
                         <p>День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В пределах МКАД.
                             <br> Доставка осуществляется только по предоплате.
                             <br> Услуга "товары на выбор" при данном типе доставки недоступна</p>
                     </li>
                     <li><input type="radio" name="delivery" id="3">
-                        <label for="3">Доставить в подарок   450 р.</label>
+                        <label for="3">Доставить в подарок 450 р.</label>
                         <p>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах МКАД.
-                            <br> Доставка осуществляется только по предоплате.
-                            <br> Дополнительная услуга — подарочная упаковка</p>
+                            <br> Доставка осуществляется только по предоплате.</p>
+                        <br><span> Дополнительная услуга — подарочная упаковка</span>
                     </li>
                     <li><input type="radio" name="delivery" id="4">
                         <label for="4">Самовывоз из пункта выдачи заказов 0 р.</label>
@@ -98,33 +85,36 @@
                 </ul>
 
             </fieldset>
-            <span>Адрес доставки</span>
-            <div><label for="street">Улица*</label>
-                <input type="text" name="street" id="street">
-            </div>
-            <div>
-                <label for="district">Район*</label>
-                <input type="text" name="district" id="district">
-            </div>
-            <div>
+            <h2>Адрес доставки</h2>
+            <div class="deliveryAdress">
                 <div>
-                    <label for="house">Дом*</label>
-                    <input type="text" name="house" id="house">
+                    <label for="street">Улица*</label>
+                    <input type="text" name="street" id="street">
                 </div>
                 <div>
-                    <label for="building">Корпус*</label>
-                    <input type="text" name="building" id="building">
+                    <label for="district">Район*</label>
+                    <input type="text" name="district" id="district">
                 </div>
                 <div>
-                    <label for="flat">Квартира/офис*</label>
-                    <input type="text" name="flat" id="flat">
+                    <div>
+                        <label for="house">Дом*</label>
+                        <input type="text" name="house" id="house">
+                    </div>
+                    <div>
+                        <label for="building">Корпус*</label>
+                        <input type="text" name="building" id="building">
+                    </div>
+                    <div>
+                        <label for="flat">Квартира/офис*</label>
+                        <input type="text" name="flat" id="flat">
+                    </div>
                 </div>
-            </div>
-            <div><label for="message">Дополнительно (номер домофона, номер офиса и тд.)</label>
-                <textarea name="message" id="message"></textarea>
+                <div><label for="message">Дополнительно (номер домофона, номер офиса и тд.)</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
             </div>
             <fieldset>
-                <span>Способ оплаты</span>
+                <h3>Способ оплаты</h3>
                 <ul>
                     <li><input type="radio" name="pay" id="pay1">
                         <label for="pay1">Оплата электронным способом (Робокасса)</label>
@@ -137,7 +127,8 @@
                     </li>
                 </ul>
             </fieldset>
-            <span>Ваши данные</span>
+            <div class="yourData">
+            <h3>Ваши данные</h3>
             <div>
                 <label for="name">Имя*</label>
                 <input type="text" name="name" id="name">
@@ -151,6 +142,7 @@
                 <input type="text" name="phone" id="phone">
             </div>
             <button>Продолжить</button>
+            </div>
         </form>
     </div>
 </div>
@@ -173,20 +165,20 @@
                 </ul>
             </li>
         </ul>
-    </div>
-    <div><a href="tel:8 (945) 648-8-456">8 (945) 648-8-456</a>
-        <a href="mailto:ecocheloveki@gmail.com">ecocheloveki@gmail.com</a>
-        <span>пн-пт 10:00 - 19:00</span>
-        <span>Ищите нас здесь</span>
-        <a href="#" class="icon-soc3"></a>
-        <a href="#" class="icon-soc2"></a>
-        <a href="#" class="icon-soc1"></a>
-    </div>
-    <div>
-        <span>© 2011-2014 Экочеловечки</span>
-        <span>Все права защищены</span>
-        <span>Все цены указаны в рублях</span>
-        <span><a href="#">«Биат»</a>Разработка</span>
+        <div><a href="tel:8 (945) 648-8-456">8 (945) 648-8-456</a>
+            <a href="mailto:ecocheloveki@gmail.com">ecocheloveki@gmail.com</a>
+            <span>пн-пт 10:00 - 19:00</span>
+            <span>Ищите нас здесь</span>
+            <a href="#" class="icon-soc3"></a>
+            <a href="#" class="icon-soc2"></a>
+            <a href="#" class="icon-soc1"></a>
+        </div>
+        <div>
+            <span>© 2011-2014 Экочеловечки</span>
+            <span>Все права защищены</span>
+            <span>Все цены указаны в рублях</span>
+            <span><a href="#">«Биат»</a>Разработка</span>
+        </div>
     </div>
 </footer>
 </body>
