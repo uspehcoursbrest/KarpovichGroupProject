@@ -36,6 +36,31 @@ ul {
     clear: both;
 }
 
+.table {
+    display: table;
+}
+
+.table.full {
+    width: 100%;
+}
+
+.tCell {
+    display: table-cell;
+}
+
+header .tCell {
+    width: 33.3333%;
+    vertical-align: top;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header .right {
+    text-align: right;
+}
+
 header .login{
     font-size: 13px;
     line-height: 18px;
@@ -100,6 +125,11 @@ header .phone [class="icon"]{
     font-size: 20px;
 }
 
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
 .advantages .item span {
     font-size: 14px;
     font-weight: bold;
@@ -140,6 +170,7 @@ header .phone [class="icon"]{
     font-size: 13px;
     line-height: 37px;
     color: #999999;
+    width: 100%;
 }
 
 .subscribe button {
@@ -149,11 +180,22 @@ header .phone [class="icon"]{
     line-height: 37px;
     text-align: center;
     color: #ffffff;
+    display: table-cell;
+    vertical-align: middle;
+    width: 188px;
 }
 
 .subscribe .wrap span {
     font-size: 12px;
     color: rgba(255,255,255,0.5);
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 25px;
+}
+
+.subscribe .wrap {
+    display: table;
+    width: 100%;
 }
 
 .filter li {
@@ -175,6 +217,33 @@ header .phone [class="icon"]{
 .card .img {
     width: 220px;
     height: 220px;
+}
+
+.card {
+    position: relative;
+}
+
+.status {
+    position: absolute;
+    display: block;
+    top: -3px;
+    left: -3px;
+    width: 43px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.status.hit {
+    background-color: #6eddcc;
+}
+
+.status.discount {
+    background-color: #ffed03;
+}
+
+.status.new {
+    background-color: #78ec71;
 }
 
 .card .title {
@@ -208,6 +277,18 @@ header .phone [class="icon"]{
     vertical-align: top;
 }
 
+.card .content {
+    position: relative;
+    min-height: 110px;
+}
+
+.card .content .buy {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0px;
+}
+
 .card button{
     font-size: 14px;
     line-height: 32px;
@@ -215,6 +296,8 @@ header .phone [class="icon"]{
     color: #ffffff;
     background-color: #ff7200;
     border: none;
+    float: right;
+    display: inline-block;
 }
 .socials h2 {
     font-size: 18px;
@@ -222,6 +305,31 @@ header .phone [class="icon"]{
     line-height: 32px;
     text-align: center;
     color: #666666;
+}
+
+.socialWrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialItem:nth-child(1) {
+    width: 290px;
+    height: 400px;
+}
+
+.socialItem:nth-child(2) {
+    width: 350px;
+    height: 400px;
+}
+.socialItem:nth-child(3) {
+    width: 290px;
+    height: 400px;
+}
+
+.socialItem {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .tabs li a {
@@ -274,27 +382,6 @@ footer a[class*="icon"]{
 .footMenu .cal {
     width: 50%;
     float: left;
-}
-
-.socialItem:nth-child(1) {
-    width: 290px;
-    height: 400px;
-}
-
-.socialItem:nth-child(2) {
-    margin: 0 25px;
-    width: 350px;
-    height: 400px;
-}
-.socialItem:nth-child(3) {
-    width: 290px;
-    height: 400px;
-}
-
-.socialItem {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .info .content {
@@ -463,4 +550,26 @@ footer a[class*="icon"]{
     font-size: 13px;
     line-height: 19px;
     color:#333333;
+}
+
+span.redStar {
+    font-size: 13px;
+    line-height: 22px;
+    color:#ed1c24;
+}
+
+.textNews a {
+    font-size: 13px;
+    line-height: 22px;
+    color:#0069b4;
+    text-decoration: underline;
+}
+
+.yourData button {
+    background-color: #ff7200;
+    border: none;
+    font-size: 13px;
+    line-height: 37px;
+    text-align: center;
+    color: #ffffff;
 }
